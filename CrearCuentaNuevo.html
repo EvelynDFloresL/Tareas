@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Crea una Cuenta</title>
+</head>
+    <main> 
+        <body id="cuerpo">  
+            <header id="cabeza" > 
+                <nav>
+                    <img src="img/Logo2.jpg" class="logo">
+                    <div class="posicion"><ul>
+                        <li><a href=" ">Inicio</a></li>
+                        <li><a href=" ">Crear Cuenta</a></li>
+                        <li><a href=" ">Crear Perfil</a></li> 
+                        <label><input class="buscar" type="search" name="texto" value="Buscar"></label> 
+                    </ul></div>
+                    
+                </nav>
+            </header>
+    <br>
+    <div class="reg_datos">
+        <form class="texto" action="#" method="get" autocomplete="off">
+                <center><h1>CREA TU CUENTA</h1></center>
+                <label for="nombre">Nombre:</label>
+                <br> 
+                <input class="cajatexto_inicio" type="text" id="nombre" name="nombre" 
+                 placeholder="Escribe tu nombre" class="cajatexto" pattern="[A-Za-z ]+" 
+                size=30 maxlength="50" required><br>
+
+                <label for="apellido">Apellido:</label><br>
+                <input class="cajatexto_inicio" type="text" id="apellido" name="apellido" 
+                placeholder="Escribe tu apellido" class="cajatexto" pattern="[A-Za-z ]+" 
+               size=30 maxlength="50" required><br>
+               
+               <label for="email">Correo:</label><br>
+               <input class="cajatexto_inicio" type="email" id="correo" name="correo" placeholder="juan@gmail.com" 
+               size=30 required><br>
+
+               <p>Tipo de Cuenta</p>
+               <input type="radio" id="free" name="tipocuenta"
+                 value="free" checked>
+               <label for="free">Free</label><br>
+
+               <input type="radio" id="familiar" name="tipocuenta"
+               value="familiar">
+               <label for="familiar">Familiar</label><br>
+
+               <input type="radio" id="premium" name="tipocuenta"
+               value="premium">
+               <label for="premium">Premium</label><br>
+
+               <label for="pais">Pais:</label><br>
+                <input class="cajatexto_inicio" type="text" id="pais" name="pais" 
+                 placeholder="Indica tu Pais" class="cajatexto" pattern="[A-Za-z ]+" 
+                size=30 maxlength="50" required><br>
+
+                <label for="tarjeta">Numero de Tarjeta:</label><br>
+                <input class="cajatexto_inicio" type="text" id="tarjeta" name="tarjeta" 
+                 placeholder="55 2458 5621" class="cajatexto" pattern="[0-9]" required><br>
+
+               <p>Pago</p>
+               <input type="radio" id="anual" name="tipopago"
+               value="anual" checked>
+               <label for="anual">Anual</label><br>
+
+               <input type="radio" id="mensual" name="tipopago"
+               value="mensual">
+               <label for="mensual">Mensual</label><br>
+
+               <label for="username">Usuario:</label><br>
+               <input class="cajatexto_inicio" type="text" id="username" name="username" required><br>
+
+               <label for="pwd">Contraseña:</label><br>
+               <input class="cajatexto_inicio" type="password" id="pwd" name="pwd" required><br><br>
+               
+               <label for="selectpais">Pais:</label> <br>
+               <select name="pais" id="pais" onchange="cargarPais();">
+                <option value="">Seleccione pais</option>
+               </select><br><br>
+
+               <input class="inicio_boton" type="submit" value="Guardar">
+               <input class="inicio_boton" type="submit" value="Cancelar">  
+            </form>
+            </div>
+            <br>
+            <footer>
+                <p >Copyright 1999-2022 by Refsnes Data. All Rights Reserved.<br>
+                    W3Schools is Powered by W3.CSS.
+                </p>
+            </footer> 
+
+        </body>
+    </main>
+</html>
