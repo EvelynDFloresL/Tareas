@@ -1,0 +1,88 @@
+body{
+    background-color:#CA6702 ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 40px;
+}
+header{ 
+    background-color: #001219;
+    width: 100%;
+    height: 100%; 
+}  
+footer{ 
+    width:100%; 
+    height: 100px;
+    position:absolute; 
+    background-color: #001219;
+    bottom: 10;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #001219;
+} 
+li {
+    float:left;
+} 
+.posicion{
+    float:right;
+    padding: 20px;
+}
+.buscar{
+    border-radius: 8px;
+    height: 3em;
+    padding: 20px 15px ; 
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:20px 15px;
+    text-decoration:solid;
+} 
+li a:hover {
+    background-color: #61569c;
+}
+
+.reg_datos{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    height: 70%;
+    width: 30%;
+    margin: auto;
+    padding: 4em;
+    border-radius: 1em;
+    align-items: center;
+    border-style: double;
+}
+.inicio_boton{
+    border-radius: 9ch;
+    color: white;
+    background-color:#9B2226;
+    padding: 10px 80px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cajatexto_inicio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    height: 2em;
+    width: 27em;
+}
+.texto{
+    text-align:left;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+select{
+    border-radius: 5ch;
+    color: white;
+    background-color:#0A9396;
+    padding: 9px 60px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
