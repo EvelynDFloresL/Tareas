@@ -1,0 +1,100 @@
+var EstadosMex={};
+EstadosMex["Puebla"]=["Puebla", "Tehuacan", "San Martin", "Cholula",
+"Acajete","Huejotzingo","Acateno","Hueyapan","Acatlán","Hueytamalco",
+"Acatzingo","Hueytlalpan","Zacapoaxtla","Xicotepec","Coronango"];
+
+EstadosMex["Veracruz"]=["Acajete", "Acatlan", "Comapa", "Cotaxtla",
+"Altotonga","Coatzacoalcos","Huayacocotla","Nogales","Papantla",
+"Tezonapa","Tlalixcoyan","Zentla","Uxpanapa"];
+
+EstadosMex["Oaxaca"]=["Huamantla", "Apizaco", "Calpulalpan", "Zacatelco",
+"Chahuites","Coatecas Altas","Ayotzintepec","Santa Cruz Mixtepec",
+"Santa María Huatulco","Santiago Yaitepec","Tlacotepec Plumas"];
+
+EstadosMex["Yucatán"]=["Conkal","Celestún","Abalá","Chocholá","Panabá",
+"Quintana Roo","Tekom","Tixmehuac","Chahuites"];
+
+EstadosMex["Zacatecas"]=["Villanueva","Jerez","Tepetongo","Atolinga",
+"Cuauhtémoc","Jalpa","Fresnillo","Miguel Auza"];
+
+EstadosMex["Guanajuato"]=["Apaseo el Alto","Acámbaro","Celaya","Huanímaro",
+"Irapuato","Pénjamo","Purísima del Rincón","Romita","Victoria","Xichú"];
+
+EstadosMex["Estados"]=["Puebla","Veracruz","Oaxaca","Yucatán","Zacatecas",
+"Guanajuato"];
+
+
+function llamar() { 
+    cargarEstados();
+}
+function cargarEstados() { 
+    var ListaEst=document.getElementById("estado");
+    var opc=EstadosMex["Estados"];
+    if (opc) {
+        var i;
+        for ( i = 0; i < opc.length; i++) {
+            var est = new Option(opc[i], opc[i]); 
+            ListaEst.options.add(est);
+        }
+    }
+}
+function cargarPueblos() {
+    var ListaEst=document.getElementById("estado");
+    var ListMuni=document.getElementById("municipio");
+    var Selec=ListaEst.options[ListaEst.selectedIndex].value;
+
+    while(ListMuni.options.length){
+        ListMuni.remove(0);
+    }
+    console.log(Selec);
+    var opc=EstadosMex[Selec];
+    if (opc) {
+        var i;
+        for ( i = 0; i < opc.length; i++) {
+            var est = new Option(opc[i], i); 
+            ListMuni.options.add(est);
+            
+        } 
+    }
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script async src="js/combosenlazados.js"></script>
+    <title>Arreglos en javascript</title>
+</head>
+<body onload="llamar()">
+    <h1>Estados de México</h1>
+    <hr>
+    <nav id="demo"></nav>
+   
+    <table>
+        <tr>
+            <td align=right>Estado:</td>
+            <td align=left colspan=3>
+            <select name="estado" id="estado" onchange="cargarPueblos();">
+                <option value="">Seleccione Estado</option>
+
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td align=right>Municipio:</td>
+            <td align=left colspan=3>
+            <select name="municipio" id="municipio">
+                <option value="">Seleccione Municipio</option>
+            </select>
+        </tr>
+    </table>
+    
+</body>
+</html>
