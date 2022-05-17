@@ -1,0 +1,77 @@
+<div class="seccion_peliculas">
+            <table>
+                <tr>
+                  <th>Portada</th>
+                  <th>Titulo</th>
+                  <th>Duracion</th>
+                  <th>Genero</th>
+                  <th>Clasificacion</th>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>b</td>
+                  <td>c</td>
+                  <td>d</td>
+                  <td>e</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                </tr>
+              </table>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        .seccion_peliculas{
+    float: right;
+    background-color:#E9D8A6;
+    width: 60%;
+    height: 70vh;
+    margin: 10%;
+}
+
+table{
+    background-color:#0A9396;
+    width: 80%;
+    margin: 50;
+    border-color:#9B2226;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align:center;
+    border: 4px solid;
+    border-color:#9B2226;
+    border-style: ridge;
+}
+  
+tr:hover {
+    background-color: #94D2BD;
+}
